@@ -390,16 +390,7 @@ footer nav label {
     }
 
     .padel-intro h1 {
-        font-family: 'Be Vietnam pro';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 57px;
-        display: flex;
-        align-items: center;
-        text-align: right;
-        letter-spacing: -0.035em;
-        color: #232C50;
+        padding: 10px;
     }
 
     .padel-intro p {
@@ -410,21 +401,20 @@ footer nav label {
     .section-two {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        height: 300px;
+        height: 280px;
         background-color: #3CDDF3;
-        padding: 0px;
+        padding: 10px;
         margin-top: 280px;
     }
 
     .section-two p {
-        width: 440px;
+        width: 330px;
         height: 88px;
         flex-wrap: wrap;
         font-family: 'Be Vietnam pro';
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
+        font-size: 14px;
         text-align: left;
 
     }
@@ -495,8 +485,9 @@ footer nav label {
         background-color: #3CDDF3;
         height: 366px;
         border-radius: 0px;
-        padding: 40px 50px 40px 50px;
+        padding: 15px;
         text-align: center;
+        margin-top: 50px;
     }
 
     .section-five h2 {
@@ -508,11 +499,11 @@ footer nav label {
     .a-go-for-it {
         background-color: #232C50;
         color: #FFFFFF;
-
+        
     }
 
     footer {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         height: 535px;
         width: 100%;
         left: 0px;
@@ -520,5 +511,49 @@ footer nav label {
         border-radius: 0px;
         padding: 40px 0px 40px 0px;
     }
+    .div-footer-box-1 {
+        display: inline-block;
+        position: relative;
+        top:370px;
+        left: 50%;
+        font-family: 'Be Vietnam';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.5px;
+        line-height: 18px;
+    } 
+    footer nav h6{
+        position: relative;
+       top:30px;
+       text-align:center;
+    }
+    footer input{
+        position: relative;
+        top: -300px;
+           }
+    footer nav label {
+        position: relative;
+        top: -300px;
+    }
+    .div-footer-box-2{
+        position: relative;
+        top: 200px;
+        left: 20%;
+        line-height: 18px;
+    }
+    .div-footer-box-2 img{
+        margin-left: 24px;
+       
+    }
+    .footer-li-a{
+       position: relative;
+       top: 100px;
+       left: -215px;
+    }
+    .footer-li-a2{
+        position: relative;
+       top: -70px;
+       left: 60px;
 
+    }
 }
