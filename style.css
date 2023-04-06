@@ -15,6 +15,11 @@
 
 }
 
+.section-header .div-ham {
+    padding: 0px;
+    left: -50px;
+}
+
 .section-header ul li {
     list-style-type: none;
     display: inline-block;
@@ -38,6 +43,7 @@
     border-radius: 50px;
 }
 
+
 /*-------------body--------------*/
 
 .section-one {
@@ -51,7 +57,6 @@ h1 {
     color: #232C50;
     font-size: 50px;
     font-weight: 700;
-    line-height: 50px;
     letter-spacing: -0.035em;
     text-align: right;
 }
@@ -106,74 +111,64 @@ h1 {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+}
 
+
+
+.a-more:hover {
+    background-color: rgba(139, 72, 191, 0.7);
 }
 
 .section-three {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding: 40px;
-
-}
-
-.section-three ul {
-    display: flex;
     justify-content: center;
-    list-style-type: none;
-    flex-wrap: wrap;
+    padding-top: 20px;
+    gap: 20px;
 
 }
 
-.section-three ul li {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Be Vietnam pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: -0.015em;
-    color: #323851;
-
-
-}
-
-.section-three nav {
+.section-three .box-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #8B48BF;
-    color: white;
-    width: 80px;
-    height: 40px;
+    color: #FFFFFF;
+    width: 70px;
+    height: 43px;
     border-radius: 30px;
     font-family: 'Be Vietnam pro';
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
+    font-weight: 700;
     line-height: 23px;
-}
-
-.box-1 {
-    color: #B3B2B7;
-    padding: 40px;
-    flex-wrap: wrap;
+    margin-left: 80px;
 
 }
 
-.box-1 p {
-    display: flex;
-    flex-wrap: wrap;
+.section-three .box-2 {
+    align-items: flex-start;
+    justify-content: start;
+    padding: 10px;
+}
+
+.section-three .box-2 p {
+
     font-family: 'Be Vietnam pro';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    height: 80px;
-    width: 500px;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #B3B2B7;
+    width: 437px;
+    height: 104px;
+    padding-top: 20px;
+
 }
+
 
 .section-four {
     display: flex;
@@ -193,7 +188,8 @@ h3 {
 
 .section-four p {
     width: 428px;
-    height: 104px;
+    height: 200px;
+    padding-top: 10px;
     font-family: 'Be Vietnam pro';
     font-style: normal;
     font-weight: 500;
@@ -326,7 +322,7 @@ footer nav label {
     display: inline-block;
     text-align: center;
     padding: 10px;
-    width: 63px;
+    width: 70px;
     height: 42px;
     background: #8B48BF;
     border-radius: 50px;
@@ -335,15 +331,52 @@ footer nav label {
     line-height: 19px;
 }
 
+
 .div-footer-box-2 {
     padding-top: 70px;
 
 }
 
+.ul-header li a:hover {
+    color: rgba(36, 46, 82, 0.6);
+}
 
-/*---MOBILE---*/
+.div-sanyo img:hover {
+    transition: all 2s ease;
+    transform: scale(2);
+}
 
-@media screen and (max-width: 480px) {
+.div-navarro img:hover {
+    transition: all 2s ease;
+    transform: scale(2);
+}
+
+.div-lebron img:hover {
+    transition: all 2s ease;
+    transform: scale(2);
+}
+
+/********* MEDIA QUERIES *********/
+@media screen and (max-width: 768px) {
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .section-header .nav-ham {
+        background-image: url(img/vector-Hamb.png);
+        resize: no-repeat;
+        width: 48px; 
+        height: 42px;
+
+    }
 
     .ul-header {
         display: none;
@@ -352,21 +385,19 @@ footer nav label {
     .a-contact {
         display: none;
         padding: 10px;
-        height: 50px;
+        height: 42px;
         width: 135px;
         font-size: 13px;
         align-self: flex-end;
         font-weight: 500;
         line-height: 19px;
     }
+}
 
-    /*-----------------imagen menu Hamburguesa ----*/
-    /*.section-header{
-    background-image:url(img/icon-hamburger.svg);
-    width: 47px;
-    height: 42px;
-   display: inline-block;
-}*/
+
+/*---MOBILE---*/
+
+@media screen and (max-width: 480px) {
 
     .section-one {
         flex-direction: column;
@@ -380,7 +411,7 @@ footer nav label {
     .padel-intro {
         height: 228px;
         width: 400px;
-        padding: 50px 20px;
+        
     }
 
     .padel-intro a {
@@ -390,16 +421,8 @@ footer nav label {
     }
 
     .padel-intro h1 {
-        font-family: 'Be Vietnam pro';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 57px;
-        display: flex;
-        align-items: center;
-        text-align: right;
-        letter-spacing: -0.035em;
-        color: #232C50;
+        
+        margin-top: 50px;
     }
 
     .padel-intro p {
@@ -410,21 +433,21 @@ footer nav label {
     .section-two {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        height: 300px;
+        height: 280px;
         background-color: #3CDDF3;
-        padding: 0px;
-        margin-top: 280px;
+        padding: 10px;
+        margin: 280px 0px 20px 0px;
+
     }
 
     .section-two p {
-        width: 440px;
+        width: 415px;
         height: 88px;
         flex-wrap: wrap;
         font-family: 'Be Vietnam pro';
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
+        font-size: 14px;
         text-align: left;
 
     }
@@ -441,28 +464,43 @@ footer nav label {
 
     .section-three {
         flex-direction: column;
-        padding: 0px;
+        gap: 0;
+        padding-left: 20px;
     }
 
-    .section-three p {
-        width: 340px;
-        height: 130px;
-        font-weight: 500;
+    .section-three .box-2 p {
+        width: 100%;
+        height: 110px;
         font-size: 16px;
-        line-height: 26px;
-        display: flex;
-        align-items: center;
-    }
-
-    .box-1 {
         padding: 0px;
-        margin-top: 60px;
+        padding-bottom: 50px;
+
+
     }
 
-    .box-1 p {
+    .section-three .box-1 {
+        margin: 0px;
+    }
+
+    .section-three .box-2 h4 {
+        position: relative;
         width: 90%;
-        padding: 0px;
-        margin: 30px 10px;
+        top: -52px;
+        left: 45px;
+        background-color: rgba(139, 72, 191, 0.3);
+        text-align: center;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: -0.015em;
+        font-family: 'Be Vietnam pro';
+        font-style: normal;
+        font-weight: 700;
+        color: #323851;
+        padding: 10px 55px 10px 0px;
+    }
+
+    h3 {
+        padding-top: 20px;
     }
 
     .div-sanyo {
@@ -480,14 +518,14 @@ footer nav label {
         align-items: center;
     }
 
-    .section-three ul li {
-        background-color: rgba(139, 72, 191, 0.3);
-        padding: 10px;
+    .div-a-more {
+        margin-top: 20px;
     }
 
     .section-four p {
-        width: 300px;
-        height: 260px;
+        width: 418px;
+        height: 145px;
+        background-color: #FAFAFA;
 
     }
 
@@ -495,8 +533,9 @@ footer nav label {
         background-color: #3CDDF3;
         height: 366px;
         border-radius: 0px;
-        padding: 40px 50px 40px 50px;
+        padding: 15px;
         text-align: center;
+        margin-top: 50px;
     }
 
     .section-five h2 {
@@ -512,13 +551,68 @@ footer nav label {
     }
 
     footer {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         height: 535px;
         width: 100%;
         left: 0px;
         top: 3057px;
         border-radius: 0px;
         padding: 40px 0px 40px 0px;
+    }
+
+    .div-footer-box-1 {
+        display: inline-block;
+        position: relative;
+        top: 370px;
+        left: 50%;
+        font-family: 'Be Vietnam';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.5px;
+        line-height: 18px;
+    }
+
+    footer nav h6 {
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    footer input {
+        position: relative;
+        top: -310px;
+        width: 250px;
+    }
+
+    footer nav label {
+        position: relative;
+        top: -310px;
+
+    }
+
+    .div-footer-box-2 {
+        position: relative;
+        top: 200px;
+        left: 20%;
+        line-height: 18px;
+    }
+
+    .div-footer-box-2 img {
+        margin-left: 24px;
+
+    }
+
+    .footer-li-a {
+        position: relative;
+        top: 100px;
+        left: -265px;
+    }
+
+    .footer-li-a2 {
+        position: relative;
+        top: -70px;
+        left: 60px;
+
     }
 
 }
